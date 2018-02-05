@@ -1,0 +1,36 @@
+@echo off
+
+rem convert path to backslash format
+set ROOTDIR=%1
+set ROOTDIR=%ROOTDIR:/=\%
+set ROOTDIR=%ROOTDIR:"=%
+set OUTPUTDIR=%2
+set OUTPUTDIR=%OUTPUTDIR:/=\%
+set OUTPUTDIR=%OUTPUTDIR:"=%
+set TOOL=%3
+
+rem process one of label bellow
+goto label_%TOOL%
+
+<?rb    for tool_key in @tools_data.keys ?>
+:label_#{tool_key}
+<?rb        directories = @tools_data[ tool_key ][ 'directories' ] ?>
+IF NOT EXIST "%OUTPUTDIR%" mkdir "%OUTPUTDIR%"
+<?rb        for directory in directories ?>
+IF NOT EXIST "%OUTPUTDIR%\#{directory}" mkdir "%OUTPUTDIR%\#{directory}"
+<?rb        end ?>
+<?rb        files = @tools_data[ tool_key ][ 'files' ] ?>
+<?rb        for file in files ?>
+<?rb            if file[ 'target' ] =~ /\/$/ ?>
+xcopy /s /e /y /h "%ROOTDIR%\#{file[ 'source' ].gsub('/', '\\')}\*" "%OUTPUTDIR%\#{file[ 'target' ].gsub('/', '\\')}*"
+<?rb            else ?>
+copy "%ROOTDIR%\#{file[ 'source' ].gsub('/', '\\')}" "%OUTPUTDIR%\#{file[ 'target' ].gsub('/', '\\')}" /Y
+<?rb            end ?>
+<?rb        end ?>
+goto end_script
+
+
+<?rb    end ?>
+
+:end_script
+

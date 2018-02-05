@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+status=0
+
+<?rb for command in @commands ?>
+#{command}
+if [ "$?" != "0" ]; then
+    status=-1
+fi
+<?rb end ?>
+
+if [ "<?rb _buf += "${1}" ?>"  != "nopause" ]; then
+read -p "Press any key to continue... " -n1 -s
+fi
+
+exit $status
+

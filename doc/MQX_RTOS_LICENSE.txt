@@ -1,0 +1,1 @@
+Please see new MQX license in the LA_OPT_FSL_OPEN_3RD_PARTY_IP file.

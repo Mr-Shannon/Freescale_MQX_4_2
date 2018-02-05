@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+<cproject>
+	<storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.freescale.coldfire.toolchain.configuration.2048943212">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.coldfire.toolchain.configuration.2048943212" moduleId="org.eclipse.cdt.core.settings" name="int flash debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="com.freescale.starcore.cdt.errorParsers.SccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjDirPath}/int flash debug/log" buildProperties="" cleanCommand="rm -f" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.starcore.cdt.errorParsers.SccErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" id="com.freescale.coldfire.toolchain.configuration.2048943212" isPrebuildInvalidatingBuild="false" name="int flash debug" parent="com.freescale.coldfire.toolchain.configuration">
+					<folderInfo id="com.freescale.coldfire.toolchain.configuration.2048943212." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.coldfire.toolchain.toolchain.project.531558296" name="ColdFire Toolchain Tools" superClass="com.freescale.coldfire.toolchain.toolchain.project">
+							<option id="com.freescale.coldfire.toolchain.sharedoption.processor.25110921" name="Processor Family (-proc)" superClass="com.freescale.coldfire.toolchain.sharedoption.processor" value="com.freescale.coldfire.toolchain.sharedoption.processor.51JF" valueType="enumerated"/>
+							<option id="com.freescale.coldfire.toolchain.sharedoption.model.878860654" superClass="com.freescale.coldfire.toolchain.sharedoption.model" value="com.freescale.coldfire.toolchain.sharedoption.model.c9x" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.coldfire.toolchain.platform.1146832337" name="ColdFire Target Platform" superClass="com.freescale.coldfire.toolchain.platform"/>
+							<builder buildPath="${ProjDirPath}/Int Flash Debug" errorParsers="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="com.freescale.coldfire.toolchain.builder.1939863448" keepEnvironmentInBuildfile="false" name="GNU Make Builder" parallelBuildWorkspaceOn="true" superClass="com.freescale.coldfire.toolchain.builder"/>
+							<tool errorParsers="" id="coldfire.toolchain.burner.1007623514" name="Burner" superClass="coldfire.toolchain.burner"/>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.linker.debug.118043887" name="ColdFire Linker" superClass="com.freescale.coldfire.toolchain.linker.debug">
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.lcf_file.1977559694" name="Link Command File (.lcf)" superClass="com.freescale.coldfire.toolchain.linker.base.input.lcf_file" value="${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/bsp/intflash.lcf" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.entrypoint.599740571" name="Entry Point: " superClass="com.freescale.coldfire.toolchain.linker.base.input.entrypoint" value="___boot" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.lpath.639009721" name="Library Search Paths (-L+path)" superClass="com.freescale.coldfire.toolchain.linker.base.input.lpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}\ColdFire_Support\ewl\lib&quot;"/>
+								</option>
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.lfile.714197481" name="Library Files (-l+file)" superClass="com.freescale.coldfire.toolchain.linker.base.input.lfile"><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/bsp/bsp.a"/><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/psp/psp.a"/></option>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.1341297078" name="Generate Link Map" superClass="com.freescale.coldfire.toolchain.linker.base.generateLinkMap" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.closure.2061087442" name="Generate Link Map - Show Transitive Closure" superClass="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.closure" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.keep.207297044" name="Generate Link Map - Always Keep Map" superClass="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.keep" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateSrec.length.272857114" name="Max S-Record Length" superClass="com.freescale.coldfire.toolchain.linker.base.generateSrec.length" value="80" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateWarning.1967658006" name="Generate Warning Messages" superClass="com.freescale.coldfire.toolchain.linker.base.generateWarning" value="com.freescale.coldfire.toolchain.linker.base.generateWarning.off" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.general.otherflags.591847133" name="Other Flags" superClass="com.freescale.coldfire.toolchain.linker.base.general.otherflags" value="" valueType="string"/>
+								<inputType id="com.freescale.coldfire.toolchain.linker.base.input.705197047" name="Linker Input" superClass="com.freescale.coldfire.toolchain.linker.base.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.compiler.debug.450785610" name="ColdFire Compiler" superClass="com.freescale.coldfire.toolchain.compiler.debug">
+								<option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.include.prefixfile.172549116" name="Prefix File (-prefix)" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.include.prefixfile" value="" valueType="symbolFile"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.637947502" name="User Path (-i)" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/bsp/Generated_Code&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/bsp&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/psp&quot;"/></option>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.recurs.390448406" name="User Recursive Path (-ir )" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include.recurs"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.system.recurs.1699904569" name="System Recursive Path (-I- -ir)" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include.system.recurs" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}&quot;"/>
+								</option>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.illpragmas.177345084" name="Illegal Pragmas" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.illpragmas" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unwanted.1539824090" name="Possible Errors" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unwanted" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.extended.308135488" name="Extended Error Checking" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.extended" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.hidevirtual.817644302" name="Hidden virtual functions" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.hidevirtual" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.implicitconv.1656274443" name="Implicit Arithmetic Conversions" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.implicitconv" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedarg.367911109" name="Unused Arguments" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedarg" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.missingreturn.250248656" name="Missing 'return' Statement" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.missingreturn" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.emptydecl.2013914087" name="Empty Declarations" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.emptydecl" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.structclass.1185717952" name="Inconsistent 'class' / 'struct' Usage" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.structclass" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.options.optLevel.1808221991" name="Optimization Level (-opt)" superClass="com.freescale.coldfire.toolchain.compiler.base.options.optLevel" value="com.freescale.coldfire.toolchain.compiler.base.options.optLevel.space" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.options.inlining.1352981697" name="Inlining" superClass="com.freescale.coldfire.toolchain.compiler.base.options.inlining" value="com.freescale.coldfire.toolchain.compiler.base.options.inlining.smart" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.code.1999327615" name="Code Model" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.code" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.code.far" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.a6.1182538016" name="A6 Stack Frames (-a6)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.a6" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sdata.1955248017" name="Use .sdata/.sbiss for (byte in integer between -1..32K)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sdata" value="0" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.bool.1174192042" name="Enable C++ 'bool' type, 'true' and 'false' Constants (-bool)" superClass="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.bool" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.wchar.off.166676152" name="Enable wchar_t Support" superClass="com.freescale.coldfire.toolchain.compiler.base.general.wchar.off" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.enumint.1740880731" name="Enum Always Int" superClass="com.freescale.coldfire.toolchain.compiler.base.general.enumint" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.unsignedchar.799921679" name="Use Unsigned Chars" superClass="com.freescale.coldfire.toolchain.compiler.base.general.unsignedchar" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.1043806626" name="Other flags" superClass="com.freescale.coldfire.toolchain.compiler.base.general.otherflags" value="-define __CODEWARRIOR__=1 -define _DEBUG=1" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.system.66993772" name="System Path (-I- -I)" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include.system" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ColdFire_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ColdFire_Support/ewl/EWL_C/include/sys&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ColdFire_Support/ewl/EWL_Runtime/Runtime_ColdFire/Source&quot;"/>
+								</option>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.enableC99.580569327" name="Enable C99 Extensions (-lang c99)" superClass="com.freescale.coldfire.toolchain.compiler.base.general.enableC99" value="true" valueType="boolean"/>
+								<inputType id="com.freescale.coldfire.toolchain.compiler.base.input.826729431" name="C Source File" superClass="com.freescale.coldfire.toolchain.compiler.base.input"/>
+								<inputType id="com.freescale.coldfire.toolchain.compiler.base.input.c++.1061660358" name="C++ Source File" superClass="com.freescale.coldfire.toolchain.compiler.base.input.c++"/>
+							<option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.macroDefined.9342025470" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.macroDefined" valueType="definedSymbols"><listOptionValue builtIn="false" value="&quot;_EWL_C99=1&quot;"/><listOptionValue builtIn="false" value="&quot;_EMBEDDED_WARRIOR_CTYPE=0&quot;"/><listOptionValue builtIn="false" value="&quot;_EWL_FLOATING_POINT=1&quot;"/><listOptionValue builtIn="false" value="&quot;__CODEWARRIOR__=1&quot;"/><listOptionValue builtIn="false" value="&quot;_DEBUG=1&quot;"/></option><option id="com.freescale.coldfire.toolchain.compiler.base.debugging.nostdinc.4542795885" superClass="com.freescale.coldfire.toolchain.compiler.base.debugging.nostdinc" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.debugging.nosyspath.9849036343" superClass="com.freescale.coldfire.toolchain.compiler.base.debugging.nosyspath" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.encoding.5917539011" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.encoding" valueType="boolean" value="com.freescale.coldfire.toolchain.compiler.base.preprocessor.encoding.ascii"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.asErrors.1901091246" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.asErrors" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_int2float.2552148530" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_int2float" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_float2int.3717672125" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_float2int" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_signedunsigned.4391820555" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_signedunsigned" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.ptrintconv.7334564336" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.ptrintconv" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedvar.4643645596" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedvar" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedresult.4143721779" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedresult" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedexpr.7662476605" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedexpr" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.extracomma.164287811" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.extracomma" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.filecaps.3743690234" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.filecaps" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.sysfilecaps.843217637" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.sysfilecaps" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.padding.9325201757" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.padding" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.undefmacro.3200488563" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.undefmacro" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.notinlined.1065880961" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.notinlined" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.illtoken.6445894292" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.illtoken" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.ipa.9679331478" superClass="com.freescale.coldfire.toolchain.compiler.base.general.ipa" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.general.ipa.off"/><option id="com.freescale.coldfire.toolchain.compiler.base.options.inlining.bottom.up.8741207600" superClass="com.freescale.coldfire.toolchain.compiler.base.options.inlining.bottom.up" valueType="boolean" value="true"/><option id="ccom.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.structAlign.7248706189" superClass="ccom.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.structAlign" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.structAlign.cf"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.data.4712042207" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.data" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.data.far"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.fp.2306496647" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.fp" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.fp.soft"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.pools.1423658436" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.pools" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.profile.6900249787" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.profile" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.indcode.1857715497" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.indcode" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.inddata.4722118801" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.inddata" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.coloring.8294648636" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.coloring" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sche.9297138029" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sche" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.peep.4430697042" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.peep" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.prototype.9614182674" superClass="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.prototype" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.iso.template.3915664355" superClass="com.freescale.coldfire.toolchain.compiler.base.general.iso.template" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.inst.9203567602" superClass="com.freescale.coldfire.toolchain.compiler.base.general.inst" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.forcecpp.9704361259" superClass="com.freescale.coldfire.toolchain.compiler.base.general.forcecpp" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.enableGCC.1353162970" superClass="com.freescale.coldfire.toolchain.compiler.base.general.enableGCC" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.cpp.exceptions.2929063515" superClass="com.freescale.coldfire.toolchain.compiler.base.general.cpp.exceptions" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.rtti.1527235116" superClass="com.freescale.coldfire.toolchain.compiler.base.general.rtti" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.ansi.strict.7063320628" superClass="com.freescale.coldfire.toolchain.compiler.base.general.ansi.strict" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.ansi.key.2609020756" superClass="com.freescale.coldfire.toolchain.compiler.base.general.ansi.key" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.trigraphs.5131400786" superClass="com.freescale.coldfire.toolchain.compiler.base.general.trigraphs" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.4scope.4383945441" superClass="com.freescale.coldfire.toolchain.compiler.base.general.4scope" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.strconst.pool.1331239602" superClass="com.freescale.coldfire.toolchain.compiler.base.general.strconst.pool" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.strconst.reuse.8949773899" superClass="com.freescale.coldfire.toolchain.compiler.base.general.strconst.reuse" valueType="boolean" value="true"/></tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.assembler.debug.2089255113" name="ColdFire Assembler" superClass="com.freescale.coldfire.toolchain.assembler.debug">
+								<option id="com.freescale.coldfire.toolchain.assembler.base.input.include.1107585281" name="User Path (-i)" superClass="com.freescale.coldfire.toolchain.assembler.base.input.include"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/bsp/Generated_Code&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/bsp&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/debug/psp&quot;"/></option>
+								<option id="com.freescale.coldfire.toolchain.assembler.base.general.otherflags.1327105593" name="Other Flags" superClass="com.freescale.coldfire.toolchain.assembler.base.general.otherflags" value=" -D_EWL_C99=1 -D_EMBEDDED_WARRIOR_CTYPE=0 -D_EWL_FLOATING_POINT=1 -D__CODEWARRIOR__=1 -D_DEBUG=1" valueType="string"/>
+								<inputType id="com.freescale.coldfire.toolchain.assembler.base.input.1718303155" name="ColdFire Assembler Input" superClass="com.freescale.coldfire.toolchain.assembler.base.input"/>
+							<option id="com.freescale.coldfire.toolchain.assembler.base.debugging.nosyspath.7242496123" superClass="com.freescale.coldfire.toolchain.assembler.base.debugging.nosyspath" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.label.9427225690" superClass="com.freescale.coldfire.toolchain.assembler.base.general.label" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.period.2533978548" superClass="com.freescale.coldfire.toolchain.assembler.base.general.period" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.case.8958795737" superClass="com.freescale.coldfire.toolchain.assembler.base.general.case" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.space.6706072220" superClass="com.freescale.coldfire.toolchain.assembler.base.general.space" valueType="boolean" value="true"/></tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.preprocessor.debug.1698447889" name="ColdFire Preprocessor" superClass="com.freescale.coldfire.toolchain.preprocessor.debug">
+								<option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.fullpath.417343486" name="Show full path (-ppopt full)" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.fullpath" value="false" valueType="boolean"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.disassembler.debug.1501056965" name="ColdFire Disassembler" superClass="com.freescale.coldfire.toolchain.disassembler.debug">
+								<option id="com.freescale.coldfire.toolchain.disassembler.base.settings.verbose.1338772862" name="Verbose Info" superClass="com.freescale.coldfire.toolchain.disassembler.base.settings.verbose" value="false" valueType="boolean"/>
+							</tool>
+						<option id="com.freescale.coldfire.toolchain.sharedoption.sym.6602418840" superClass="com.freescale.coldfire.toolchain.sharedoption.sym" valueType="enumerated" value="com.freescale.coldfire.toolchain.sharedoption.sym.full"/><option id="com.freescale.coldfire.toolchain.sharedoption.msgstyle.1328939550" superClass="com.freescale.coldfire.toolchain.sharedoption.msgstyle" valueType="enumerated" value="com.freescale.coldfire.toolchain.sharedoption.msgstyle.parseable"/></toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.coldfire.toolchain.configuration.1158382755">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.coldfire.toolchain.configuration.1158382755" moduleId="org.eclipse.cdt.core.settings" name="int flash release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="com.freescale.starcore.cdt.errorParsers.SccErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjDirPath}/int flash release/log" buildProperties="" cleanCommand="rm -f" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;com.freescale.starcore.cdt.errorParsers.SccErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" id="com.freescale.coldfire.toolchain.configuration.1158382755" isPrebuildInvalidatingBuild="false" name="int flash release" parent="com.freescale.coldfire.toolchain.configuration">
+					<folderInfo id="com.freescale.coldfire.toolchain.configuration.1158382755." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.coldfire.toolchain.toolchain.project.82579227" name="ColdFire Toolchain Tools" superClass="com.freescale.coldfire.toolchain.toolchain.project">
+							<option id="com.freescale.coldfire.toolchain.sharedoption.processor.1217766734" name="Processor Family (-proc)" superClass="com.freescale.coldfire.toolchain.sharedoption.processor" value="com.freescale.coldfire.toolchain.sharedoption.processor.51JF" valueType="enumerated"/>
+							<option id="com.freescale.coldfire.toolchain.sharedoption.model.878860654" superClass="com.freescale.coldfire.toolchain.sharedoption.model" value="com.freescale.coldfire.toolchain.sharedoption.model.c9x" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.coldfire.toolchain.platform.252592290" name="ColdFire Target Platform" superClass="com.freescale.coldfire.toolchain.platform"/>
+							<builder buildPath="${ProjDirPath}/Int Flash Release" errorParsers="com.freescale.core.ide.cdt.errorParsers.GCCErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="com.freescale.coldfire.toolchain.builder.940102109" keepEnvironmentInBuildfile="false" name="GNU Make Builder" parallelBuildWorkspaceOn="true" superClass="com.freescale.coldfire.toolchain.builder"/>
+							<tool errorParsers="" id="coldfire.toolchain.burner.1539309822" name="Burner" superClass="coldfire.toolchain.burner"/>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.linker.debug.2076339260" name="ColdFire Linker" superClass="com.freescale.coldfire.toolchain.linker.debug">
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.lcf_file.1856978476" name="Link Command File (.lcf)" superClass="com.freescale.coldfire.toolchain.linker.base.input.lcf_file" value="${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/bsp/intflash.lcf" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.entrypoint.1377417841" name="Entry Point: " superClass="com.freescale.coldfire.toolchain.linker.base.input.entrypoint" value="___boot" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.lpath.874937320" name="Library Search Paths (-L+path)" superClass="com.freescale.coldfire.toolchain.linker.base.input.lpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}\ColdFire_Support\ewl\lib&quot;"/>
+								</option>
+								<option id="com.freescale.coldfire.toolchain.linker.base.input.lfile.676708596" name="Library Files (-l+file)" superClass="com.freescale.coldfire.toolchain.linker.base.input.lfile"><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/bsp/bsp.a"/><listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/psp/psp.a"/></option>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.985535697" name="Generate Link Map" superClass="com.freescale.coldfire.toolchain.linker.base.generateLinkMap" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.closure.1922886572" name="Generate Link Map - Show Transitive Closure" superClass="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.closure" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.keep.159995997" name="Generate Link Map - Always Keep Map" superClass="com.freescale.coldfire.toolchain.linker.base.generateLinkMap.keep" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateSrec.length.1780091215" name="Max S-Record Length" superClass="com.freescale.coldfire.toolchain.linker.base.generateSrec.length" value="80" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.generateWarning.1434708604" name="Generate Warning Messages" superClass="com.freescale.coldfire.toolchain.linker.base.generateWarning" value="com.freescale.coldfire.toolchain.linker.base.generateWarning.off" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.linker.base.general.otherflags.591847134" name="Other Flags" superClass="com.freescale.coldfire.toolchain.linker.base.general.otherflags" value="" valueType="string"/>
+								<inputType id="com.freescale.coldfire.toolchain.linker.base.input.655979014" name="Linker Input" superClass="com.freescale.coldfire.toolchain.linker.base.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.compiler.debug.1165194468" name="ColdFire Compiler" superClass="com.freescale.coldfire.toolchain.compiler.debug">
+								<option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.include.prefixfile.554659221" name="Prefix File (-prefix)" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.include.prefixfile" value="" valueType="symbolFile"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.1526981136" name="User Path (-i)" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/bsp/Generated_Code&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/bsp&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/psp&quot;"/></option>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.recurs.599353486" name="User Recursive Path (-ir )" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include.recurs"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.system.recurs.679226555" name="System Recursive Path (-I- -ir)" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include.system.recurs" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}&quot;"/>
+								</option>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.illpragmas.759616096" name="Illegal Pragmas" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.illpragmas" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unwanted.2043517796" name="Possible Errors" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unwanted" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.extended.1209180753" name="Extended Error Checking" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.extended" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.hidevirtual.1361988965" name="Hidden virtual functions" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.hidevirtual" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.implicitconv.1443655087" name="Implicit Arithmetic Conversions" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.implicitconv" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedarg.1324015060" name="Unused Arguments" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedarg" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.missingreturn.1432808141" name="Missing 'return' Statement" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.missingreturn" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.emptydecl.66711785" name="Empty Declarations" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.emptydecl" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.warnings.structclass.606266489" name="Inconsistent 'class' / 'struct' Usage" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.structclass" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.options.optLevel.306885704" name="Optimization Level (-opt)" superClass="com.freescale.coldfire.toolchain.compiler.base.options.optLevel" value="com.freescale.coldfire.toolchain.compiler.base.options.optLevel.space" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.options.inlining.1166687680" name="Inlining" superClass="com.freescale.coldfire.toolchain.compiler.base.options.inlining" value="com.freescale.coldfire.toolchain.compiler.base.options.inlining.smart" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.code.854019333" name="Code Model" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.code" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.code.far" valueType="enumerated"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.a6.799248432" name="A6 Stack Frames (-a6)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.a6" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.coloring.1251095913" name="Register Coloring (-coloring)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.coloring" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sche.820994813" name="Instruction Scheduling (-scheduling)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sche" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.peep.1669539082" name="Peephole (-peephole)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.peep" value="false" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sdata.84346479" name="Use .sdata/.sbiss for (byte in integer between -1..32K)" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.sdata" value="0" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.bool.349174648" name="Enable C++ 'bool' type, 'true' and 'false' Constants (-bool)" superClass="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.bool" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.wchar.off.126867382" name="Enable wchar_t Support" superClass="com.freescale.coldfire.toolchain.compiler.base.general.wchar.off" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.enumint.392240493" name="Enum Always Int" superClass="com.freescale.coldfire.toolchain.compiler.base.general.enumint" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.unsignedchar.204169528" name="Use Unsigned Chars" superClass="com.freescale.coldfire.toolchain.compiler.base.general.unsignedchar" value="true" valueType="boolean"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.1043806625" name="Other flags" superClass="com.freescale.coldfire.toolchain.compiler.base.general.otherflags" value="-define __CODEWARRIOR__=1" valueType="string"/>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.input.include.system.66993773" name="System Path (-I- -I)" superClass="com.freescale.coldfire.toolchain.compiler.base.input.include.system" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ColdFire_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ColdFire_Support/ewl/EWL_C/include/sys&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ColdFire_Support/ewl/EWL_Runtime/Runtime_ColdFire/Source&quot;"/>
+								</option>
+								<option id="com.freescale.coldfire.toolchain.compiler.base.general.enableC99.224127006" name="Enable C99 Extensions (-lang c99)" superClass="com.freescale.coldfire.toolchain.compiler.base.general.enableC99" value="true" valueType="boolean"/>
+								<inputType id="com.freescale.coldfire.toolchain.compiler.base.input.1235445634" name="C Source File" superClass="com.freescale.coldfire.toolchain.compiler.base.input"/>
+								<inputType id="com.freescale.coldfire.toolchain.compiler.base.input.c++.22698490" name="C++ Source File" superClass="com.freescale.coldfire.toolchain.compiler.base.input.c++"/>
+							<option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.macroDefined.7266948086" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.macroDefined" valueType="definedSymbols"><listOptionValue builtIn="false" value="&quot;_EWL_C99=1&quot;"/><listOptionValue builtIn="false" value="&quot;_EMBEDDED_WARRIOR_CTYPE=0&quot;"/><listOptionValue builtIn="false" value="&quot;_EWL_FLOATING_POINT=1&quot;"/><listOptionValue builtIn="false" value="&quot;__CODEWARRIOR__=1&quot;"/><listOptionValue builtIn="false" value="&quot;NDEBUG=1&quot;"/></option><option id="com.freescale.coldfire.toolchain.compiler.base.debugging.nostdinc.1729819523" superClass="com.freescale.coldfire.toolchain.compiler.base.debugging.nostdinc" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.debugging.nosyspath.6478904493" superClass="com.freescale.coldfire.toolchain.compiler.base.debugging.nosyspath" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.encoding.6628504813" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.encoding" valueType="boolean" value="com.freescale.coldfire.toolchain.compiler.base.preprocessor.encoding.ascii"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.asErrors.2172027849" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.asErrors" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_int2float.3445357034" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_int2float" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_float2int.647719915" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_float2int" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_signedunsigned.1407760004" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.impl_signedunsigned" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.ptrintconv.3358197158" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.ptrintconv" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedvar.8632490228" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedvar" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedresult.3943324412" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedresult" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedexpr.4888981835" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.unusedexpr" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.extracomma.7666536821" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.extracomma" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.filecaps.2039386115" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.filecaps" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.sysfilecaps.3310250776" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.sysfilecaps" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.padding.3519120474" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.padding" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.undefmacro.2345656690" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.undefmacro" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.notinlined.8991766851" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.notinlined" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.warnings.illtoken.1741583356" superClass="com.freescale.coldfire.toolchain.compiler.base.warnings.illtoken" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.ipa.9030610914" superClass="com.freescale.coldfire.toolchain.compiler.base.general.ipa" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.general.ipa.off"/><option id="com.freescale.coldfire.toolchain.compiler.base.options.inlining.bottom.up.5611975093" superClass="com.freescale.coldfire.toolchain.compiler.base.options.inlining.bottom.up" valueType="boolean" value="true"/><option id="ccom.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.structAlign.1237904830" superClass="ccom.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.structAlign" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.structAlign.cf"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.data.1696135960" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.data" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.data.far"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.fp.6803071168" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.fp" valueType="enumerated" value="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.fp.soft"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.pools.6379762639" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.pools" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.profile.9855657511" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.profile" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.indcode.5479420260" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.indcode" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.inddata.5563886390" superClass="com.freescale.coldfire.toolchain.compiler.base.optionCategory.processor.inddata" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.prototype.3923890602" superClass="com.freescale.coldfire.toolchain.compiler.base.general.otherflags.prototype" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.iso.template.3162088721" superClass="com.freescale.coldfire.toolchain.compiler.base.general.iso.template" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.inst.91237987" superClass="com.freescale.coldfire.toolchain.compiler.base.general.inst" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.forcecpp.7075432834" superClass="com.freescale.coldfire.toolchain.compiler.base.general.forcecpp" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.enableGCC.3685105420" superClass="com.freescale.coldfire.toolchain.compiler.base.general.enableGCC" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.cpp.exceptions.2803436685" superClass="com.freescale.coldfire.toolchain.compiler.base.general.cpp.exceptions" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.rtti.373966483" superClass="com.freescale.coldfire.toolchain.compiler.base.general.rtti" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.ansi.strict.8190417373" superClass="com.freescale.coldfire.toolchain.compiler.base.general.ansi.strict" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.ansi.key.4968392935" superClass="com.freescale.coldfire.toolchain.compiler.base.general.ansi.key" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.trigraphs.3586839224" superClass="com.freescale.coldfire.toolchain.compiler.base.general.trigraphs" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.4scope.1116715364" superClass="com.freescale.coldfire.toolchain.compiler.base.general.4scope" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.strconst.pool.116316828" superClass="com.freescale.coldfire.toolchain.compiler.base.general.strconst.pool" valueType="boolean" value="false"/><option id="com.freescale.coldfire.toolchain.compiler.base.general.strconst.reuse.270351444" superClass="com.freescale.coldfire.toolchain.compiler.base.general.strconst.reuse" valueType="boolean" value="true"/></tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.assembler.debug.1374071205" name="ColdFire Assembler" superClass="com.freescale.coldfire.toolchain.assembler.debug">
+								<option id="com.freescale.coldfire.toolchain.assembler.base.input.include.1870036875" name="User Path (-i)" superClass="com.freescale.coldfire.toolchain.assembler.base.input.include"><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/bsp/Generated_Code&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/bsp&quot;"/><listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../../../lib/twrmcf51jf.cw10/release/psp&quot;"/></option>
+								<option id="com.freescale.coldfire.toolchain.assembler.base.general.otherflags.689301320" name="Other Flags" superClass="com.freescale.coldfire.toolchain.assembler.base.general.otherflags" value=" -D_EWL_C99=1 -D_EMBEDDED_WARRIOR_CTYPE=0 -D_EWL_FLOATING_POINT=1 -D__CODEWARRIOR__=1 -DNDEBUG=1" valueType="string"/>
+								<inputType id="com.freescale.coldfire.toolchain.assembler.base.input.1031092949" name="ColdFire Assembler Input" superClass="com.freescale.coldfire.toolchain.assembler.base.input"/>
+							<option id="com.freescale.coldfire.toolchain.assembler.base.debugging.nosyspath.2474326306" superClass="com.freescale.coldfire.toolchain.assembler.base.debugging.nosyspath" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.label.8354458777" superClass="com.freescale.coldfire.toolchain.assembler.base.general.label" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.period.9540816777" superClass="com.freescale.coldfire.toolchain.assembler.base.general.period" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.case.1635875340" superClass="com.freescale.coldfire.toolchain.assembler.base.general.case" valueType="boolean" value="true"/><option id="com.freescale.coldfire.toolchain.assembler.base.general.space.8389929216" superClass="com.freescale.coldfire.toolchain.assembler.base.general.space" valueType="boolean" value="true"/></tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.preprocessor.debug.2120250413" name="ColdFire Preprocessor" superClass="com.freescale.coldfire.toolchain.preprocessor.debug">
+								<option id="com.freescale.coldfire.toolchain.compiler.base.preprocessor.fullpath.2094975622" name="Show full path (-ppopt full)" superClass="com.freescale.coldfire.toolchain.compiler.base.preprocessor.fullpath" value="false" valueType="boolean"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.coldfire.toolchain.disassembler.debug.127138371" name="ColdFire Disassembler" superClass="com.freescale.coldfire.toolchain.disassembler.debug">
+								<option id="com.freescale.coldfire.toolchain.disassembler.base.settings.verbose.1215234165" name="Verbose Info" superClass="com.freescale.coldfire.toolchain.disassembler.base.settings.verbose" value="false" valueType="boolean"/>
+							</tool>
+						<option id="com.freescale.coldfire.toolchain.sharedoption.sym.8967240732" superClass="com.freescale.coldfire.toolchain.sharedoption.sym" valueType="enumerated" value="com.freescale.coldfire.toolchain.sharedoption.sym.full"/><option id="com.freescale.coldfire.toolchain.sharedoption.msgstyle.3916210720" superClass="com.freescale.coldfire.toolchain.sharedoption.msgstyle" valueType="enumerated" value="com.freescale.coldfire.toolchain.sharedoption.msgstyle.parseable"/></toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="mqx.com.freescale.coldfire.toolchain.projecttype.1479962403" name="Freescale Coldfire" projectType="com.freescale.coldfire.toolchain.projecttype"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+		<profile id="com.freescale.coldfire.cdt.toolchain.linux.discoveryProfile">
+			<buildOutputProvider>
+				<openAction enabled="false" filePath=""/>
+				<parser enabled="false"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="${CFGCCInstallDir}/m68k-linux-gnu-gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="com.freescale.coldfire.cdt.cpp.toolchain.linux.discoveryProfile">
+			<buildOutputProvider>
+				<openAction enabled="false" filePath=""/>
+				<parser enabled="false"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="${CFGCCInstallDir}/m68k-linux-gnu-g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="com.freescale.coldfire.cdt.toolchain.uclinux.discoveryProfile">
+			<buildOutputProvider>
+				<openAction enabled="false" filePath=""/>
+				<parser enabled="false"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="${CFGCCUCInstallDir}/m68k-uclinux-gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="com.freescale.coldfire.cdt.cpp.toolchain.uclinux.discoveryProfile">
+			<buildOutputProvider>
+				<openAction enabled="false" filePath=""/>
+				<parser enabled="false"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="${CFGCCUCInstallDir}/m68k-uclinux-g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="makefileGenerator">
+				<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+	</storageModule>
+</cproject>

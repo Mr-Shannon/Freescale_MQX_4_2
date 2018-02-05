@@ -1,0 +1,154 @@
+#------------------------------------------------------------
+# tool extensions 
+#------------------------------------------------------------
+<?rb if @general[ 'libext' ] ?>
+LIBRARY_EXT     = #{@general[ 'libext' ]}
+<?rb end ?>
+<?rb if @general[ 'appext' ] ?>
+APPLICATION_EXT = #{@general[ 'appext' ]}
+<?rb end ?>
+
+
+#------------------------------------------------------------
+# libraries tool options 
+#------------------------------------------------------------
+ifeq ($(TYPE),library)
+
+<?rb if @libdata[ 'common' ] ?>
+# common settings
+<?rb    if @libdata[ 'common' ][ 'as-flags' ] and not @libdata[ 'common' ][ 'as-flags' ].empty? ?>
+AS_FLAGS += <?rb for flag in @libdata[ 'common' ][ 'as-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'cc-flags' ] and not  @libdata[ 'common' ][ 'cc-flags' ].empty? ?>
+CC_FLAGS += <?rb for flag in @libdata[ 'common' ][ 'cc-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'cx-flags' ] and not  @libdata[ 'common' ][ 'cx-flags' ].empty? ?>
+CX_FLAGS += <?rb for flag in @libdata[ 'common' ][ 'cx-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'ld-flags' ] and not  @libdata[ 'common' ][ 'ld-flags' ].empty? ?>
+LD_FLAGS += <?rb for flag in @libdata[ 'common' ][ 'ld-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'ar-flags' ] and not  @libdata[ 'common' ][ 'ar-flags' ].empty? ?>
+AR_FLAGS += <?rb for flag in @libdata[ 'common' ][ 'ar-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'as-define' ] and not  @libdata[ 'common' ][ 'as-define' ].empty? ?>
+AS_DEFINE += <?rb for define in @libdata[ 'common' ][ 'as-define' ] ?>#{define} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'cc-define' ] and not  @libdata[ 'common' ][ 'cc-define' ].empty? ?>
+CC_DEFINE += <?rb for define in @libdata[ 'common' ][ 'cc-define' ] ?>#{define} <?rb end ?>
+<?rb    end ?>
+<?rb    if @libdata[ 'common' ][ 'cx-define' ] and not  @libdata[ 'common' ][ 'cx-define' ].empty? ?>
+CX_DEFINE += <?rb for define in @libdata[ 'common' ][ 'cx-define' ] ?>#{define} <?rb end ?>
+<?rb    end ?>
+<?rb end ?>
+
+
+<?rb if @libdata[ 'configs' ] ?>
+<?rb    for configkey, config in @libdata[ 'configs' ] ?>
+<?rb        if config ?>
+ifeq ($(CONFIG),#{config[ 'name']})
+<?rb            if config[ 'as-flags' ] and not config[ 'as-flags' ].empty? ?>
+AS_FLAGS += <?rb for flag in config[ 'as-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cc-flags' ] and not config[ 'cc-flags' ].empty? ?>
+CC_FLAGS += <?rb for flag in config[ 'cc-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cx-flags' ] and not config[ 'cx-flags' ].empty? ?>
+CX_FLAGS += <?rb for flag in config[ 'cx-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'ld-flags' ] and not config[ 'ld-flags' ].empty? ?>
+LD_FLAGS += <?rb for flag in config[ 'ld-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'ar-flags' ] and not config[ 'ar-flags' ].empty? ?>
+AR_FLAGS += <?rb for flag in config[ 'ar-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'as-define' ] and not config[ 'as-define' ].empty? ?>
+AS_DEFINE += <?rb for define in config[ 'as-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cc-define' ] and not config[ 'cc-define' ].empty? ?>
+CC_DEFINE += <?rb for define in config[ 'cc-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cx-define' ] and not config[ 'cx-define' ].empty? ?>
+CX_DEFINE += <?rb for define in config[ 'cx-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+endif
+<?rb        end ?>
+<?rb    end ?>
+<?rb end ?>
+endif
+
+
+#------------------------------------------------------------
+# application tool options 
+#------------------------------------------------------------
+ifeq ($(TYPE),application)
+
+<?rb if @appdata[ 'common' ] ?>
+# common settings
+<?rb    if @appdata[ 'common' ][ 'as-flags' ] and not @appdata[ 'common' ][ 'as-flags' ].empty? ?>
+AS_FLAGS += <?rb for flag in @appdata[ 'common' ][ 'as-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'cc-flags' ] and not @appdata[ 'common' ][ 'cc-flags' ].empty? ?>
+CC_FLAGS += <?rb for flag in @appdata[ 'common' ][ 'cc-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'cx-flags' ] and not @appdata[ 'common' ][ 'cx-flags' ].empty? ?>
+CX_FLAGS += <?rb for flag in @appdata[ 'common' ][ 'cx-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'ld-flags' ] and not @appdata[ 'common' ][ 'ld-flags' ].empty? ?>
+LD_FLAGS += <?rb for flag in @appdata[ 'common' ][ 'ld-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'ar-flags' ] and not @appdata[ 'common' ][ 'ar-flags' ].empty? ?>
+AR_FLAGS += <?rb for flag in @appdata[ 'common' ][ 'ar-flags' ] ?>#{flag} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'as-define' ] and not @appdata[ 'common' ][ 'as-define' ].empty? ?>
+AS_DEFINE += <?rb for define in @appdata[ 'common' ][ 'as-define' ] ?>#{define} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'cc-define' ] and not @appdata[ 'common' ][ 'cc-define' ].empty? ?>
+CC_DEFINE += <?rb for define in @appdata[ 'common' ][ 'cc-define' ] ?>#{define} <?rb end ?>
+<?rb    end ?>
+<?rb    if @appdata[ 'common' ][ 'cx-define' ] and not @appdata[ 'common' ][ 'cx-define' ].empty? ?>
+CX_DEFINE += <?rb for define in @appdata[ 'common' ][ 'cx-define' ] ?>#{define} <?rb end ?>
+<?rb    end ?>
+<?rb end ?>
+
+
+<?rb if @appdata[ 'configs' ] ?>
+<?rb    for configkey, config in @appdata[ 'configs' ] ?>
+<?rb        if config ?>
+ifeq ($(CONFIG),#{config[ 'name']})
+<?rb            if config[ 'as-flags' ] and not config[ 'as-flags' ].empty? ?>
+AS_FLAGS += <?rb for flag in config[ 'as-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cc-flags' ] and not config[ 'cc-flags' ].empty? ?>
+CC_FLAGS += <?rb for flag in config[ 'cc-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cx-flags' ] and not config[ 'cx-flags' ].empty? ?>
+CX_FLAGS += <?rb for flag in config[ 'cx-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'ld-flags' ] and not config[ 'ld-flags' ].empty? ?>
+LD_FLAGS += <?rb for flag in config[ 'ld-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'ar-flags' ] and not config[ 'ar-flags' ].empty? ?>
+AR_FLAGS += <?rb for flag in config[ 'ar-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'as-define' ] and not config[ 'as-define' ].empty? ?>
+AS_DEFINE += <?rb for define in config[ 'as-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cc-define' ] and not config[ 'cc-define' ].empty? ?>
+CC_DEFINE += <?rb for define in config[ 'cc-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+<?rb            if config[ 'cx-define' ] and not config[ 'cx-define' ].empty? ?>
+CX_DEFINE += <?rb for define in config[ 'cx-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+endif
+<?rb        end ?>
+<?rb    end ?>
+<?rb end ?>
+
+endif
+
+
+
+
+
+

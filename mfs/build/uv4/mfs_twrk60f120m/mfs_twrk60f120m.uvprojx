@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_proj.xsd">
+
+  <SchemaVersion>1.1</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <Targets>
+    <Target>
+      <TargetName>debug</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>MK60FN1M0xxx12</Device>
+          <Vendor>Freescale Semiconductor</Vendor>
+          <Cpu>CPUTYPE("Cortex-M4.fp")</Cpu>
+          <FlashUtilSpec/>
+          <StartupFile>"STARTUP\Freescale\Kinetis\startup_MK60F15.s" ("Freescale MK60FN1M0xxx12 Startup Code")</StartupFile>
+          <FlashDriverDll>ULP2CM3(-O2510 -S0 -C0 -FO15 -FD20000000 -FC4000 -FN1 -FF0MK_P512 -FS00 -FL080000)</FlashDriverDll>
+          <DeviceId>5361</DeviceId>
+          <RegisterFile>MK60F12.H</RegisterFile>
+          <MemoryEnv/>
+          <Cmp/>
+          <Asm/>
+          <Linker/>
+          <OHString/>
+          <InfinionOptionDll/>
+          <SLE66CMisc/>
+          <SLE66AMisc/>
+          <SLE66LinkerMisc/>
+          <SFDFile>SFD\Freescale\Kinetis\MK60F15.sfr</SFDFile>
+          <UseEnv>0</UseEnv>
+          <BinPath/>
+          <IncludePath/>
+          <LibPath/>
+          <RegisterFilePath>Freescale\Kinetis\</RegisterFilePath>
+          <DBRegisterFilePath>Freescale\Kinetis\</DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>..\..\..\..\lib\twrk60f120m.uv4\debug\mfs\</OutputDirectory>
+          <OutputName>mfs.lib</OutputName>
+          <CreateExecutable>0</CreateExecutable>
+          <CreateLib>1</CreateLib>
+          <CreateHexFile>0</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>0</BrowseInformation>
+          <ListingPath>lib\twrk60f120m.uv4\debug\mfs\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name/>
+            <UserProg2Name/>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name/>
+            <UserProg2Name/>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name>../../bat/mfs_twrk60f120m.bat ../../../.. ../../../../lib/twrk60f120m.uv4/debug/mfs uv4</UserProg1Name>
+            <UserProg2Name/>
+            <UserProg1Dos16Mode>1</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </AfterMake>
+          <SelectedForBatchBuild>1</SelectedForBatchBuild>
+          <SVCSIdString/>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument/>
+          <IncludeLibraryModules/>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName>SARMCM3.DLL</SimDllName>
+          <SimDllArguments>-MPU</SimDllArguments>
+          <SimDlgDll>DCM.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments>-MPU</TargetDllArguments>
+          <TargetDlgDll>TCM.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+          <Simulator>
+            <UseSimulator>1</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+          </Simulator>
+          <Target>
+            <UseTarget>0</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>0</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>7</TargetSelection>
+          <SimDlls>
+            <CpuDll/>
+            <CpuDllArguments/>
+            <PeripheralDll/>
+            <PeripheralDllArguments/>
+            <InitializationFile/>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll/>
+            <CpuDllArguments/>
+            <PeripheralDll/>
+            <PeripheralDllArguments/>
+            <InitializationFile/>
+            <Driver>BIN\ULP2CM3.DLL</Driver>
+          </TargetDlls>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4101</DriverSelection>
+          </Flash1>
+          <Flash2>BIN\ULP2CM3.DLL</Flash2>
+          <Flash3>"" ()</Flash3>
+          <Flash4/>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <RvctDeviceName/>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>0</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>0</useUlib>
+            <EndSel>1</EndSel>
+            <uLtcg>0</uLtcg>
+            <RoSelD>3</RoSelD>
+            <RwSelD>3</RwSelD>
+            <CodeSel>0</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>0</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x1fff0000</StartAddress>
+                <Size>0x10000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x80000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x80000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x1fff0000</StartAddress>
+                <Size>0x10000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x10000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector/>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>1</Optim>
+            <oTime>0</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>1</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <VariousControls>
+              <MiscControls>-J../../../source/include 
+-J../../../../mqx/source/io/adc/kadc 
+-J../../../../mqx/source/io/adc 
+-J../../../../mqx/source/io/cm 
+-J../../../../config/twrk60f120m 
+-J../../../../mqx/source/io/dma 
+-J../../../../mqx/source/io/enet/macnet 
+-J../../../../mqx/source/io/enet/phy 
+-J../../../../mqx/source/io/enet 
+-J../../../../mqx/source/io/esdhc 
+-J../../../../mqx/source/io/flashx/freescale 
+-J../../../../mqx/source/io/flashx 
+-J../../../../mqx/source/io/flashx/amd 
+-J../../../../mqx/source/io/flashx/fujitsu 
+-J../../../../mqx/source/io/flashx/spansion 
+-J../../../../mqx/source/io/flashx/atmel 
+-J../../../../mqx/source/io/flashx/istrata 
+-J../../../../mqx/source/io/flashx/sharp 
+-J../../../../mqx/source/io/can/flexcan 
+-J../../../../mqx/source/io/gpio/kgpio 
+-J../../../../mqx/source/io/gpio 
+-J../../../../mqx/source/io/hwtimer 
+-J../../../../mqx/source/io/i2c 
+-J../../../../mqx/source/io/i2c/polled 
+-J../../../../mqx/source/io/i2c/int 
+-J../../../../mqx/source/bsp/twrk60f120m 
+-J../../../../config/common 
+-J../../../../mqx/source/include 
+-J../../../../mqx/source/bsp/twrk60f120m 
+-J../../../../mqx/source/io/enet 
+-J../../../../mqx/source/io/debug 
+-J../../../../mqx/source/io/io_mem 
+-J../../../../mqx/source/io/io_null 
+-J../../../../mqx/source/io/pipe 
+-J../../../../mqx/source/io/lpm 
+-J../../../../mqx/source/io/lwadc 
+-J../../../../mqx/source/io/lwgpio 
+-J../../../../mqx/source/io/nandflash/nfc 
+-J../../../../mqx/source/io/nandflash 
+-J../../../../mqx/source/io/pcb 
+-J../../../../mqx/source/io/pcb/mqxa 
+-J../../../../mqx/source/io/pccard 
+-J../../../../mqx/source/io/pcflash 
+-J../../../../mqx/source/io/rtc 
+-J../../../../mqx/source/io/sai 
+-J../../../../mqx/source/io/sai/dma 
+-J../../../../mqx/source/io/sdcard/sdcard_esdhc 
+-J../../../../mqx/source/io/sdcard/sdcard_spi 
+-J../../../../mqx/source/io/sdcard 
+-J../../../../mqx/source/io/serial 
+-J../../../../mqx/source/io/spi 
+-J../../../../mqx/source/io/tchres 
+-J../../../../mqx/source/io/tfs 
+-J../../../../mqx/source/io/timer 
+-J../../../../mqx/source/io/usb 
+-J../../../../mqx/source/io/usb_dcd 
+-J../../../../mqx/source/io/usb_dcd/polled 
+-J../../../../mqx/source/io/usb_dcd/int 
+-J../../../../mqx/source/psp/cortex_m/compiler/rv_uv4 
+-J../../../../mqx/source/psp/cortex_m/cpu 
+-J../../../../mqx/source/psp/cortex_m 
+-J../../../../config/twrk60f120m 
+-J../../../../config/common 
+-J../../../../mqx/source/include 
+-J../../../../mqx/source/tad 
+-J#J 
+--library_interface=none 
+--library_type=standardlib 
+--c99 
+--diag_suppress=1296,186 
+</MiscControls>
+              <Define>_DEBUG=1</Define>
+              <Undefine/>
+              <IncludePath>../../../source/include;../../../../mqx/source/io/adc/kadc;../../../../mqx/source/io/adc;../../../../mqx/source/io/cm;../../../../config/twrk60f120m;../../../../mqx/source/io/dma;../../../../mqx/source/io/enet/macnet;../../../../mqx/source/io/enet/phy;../../../../mqx/source/io/enet;../../../../mqx/source/io/esdhc;../../../../mqx/source/io/flashx/freescale;../../../../mqx/source/io/flashx;../../../../mqx/source/io/flashx/amd;../../../../mqx/source/io/flashx/fujitsu;../../../../mqx/source/io/flashx/spansion;../../../../mqx/source/io/flashx/atmel;../../../../mqx/source/io/flashx/istrata;../../../../mqx/source/io/flashx/sharp;../../../../mqx/source/io/can/flexcan;../../../../mqx/source/io/gpio/kgpio;../../../../mqx/source/io/gpio;../../../../mqx/source/io/hwtimer;../../../../mqx/source/io/i2c;../../../../mqx/source/io/i2c/polled;../../../../mqx/source/io/i2c/int;../../../../mqx/source/bsp/twrk60f120m;../../../../config/common;../../../../mqx/source/include;../../../../mqx/source/bsp/twrk60f120m;../../../../mqx/source/io/enet;../../../../mqx/source/io/debug;../../../../mqx/source/io/io_mem;../../../../mqx/source/io/io_null;../../../../mqx/source/io/pipe;../../../../mqx/source/io/lpm;../../../../mqx/source/io/lwadc;../../../../mqx/source/io/lwgpio;../../../../mqx/source/io/nandflash/nfc;../../../../mqx/source/io/nandflash;../../../../mqx/source/io/pcb;../../../../mqx/source/io/pcb/mqxa;../../../../mqx/source/io/pccard;../../../../mqx/source/io/pcflash;../../../../mqx/source/io/rtc;../../../../mqx/source/io/sai;../../../../mqx/source/io/sai/dma;../../../../mqx/source/io/sdcard/sdcard_esdhc;../../../../mqx/source/io/sdcard/sdcard_spi;../../../../mqx/source/io/sdcard;../../../../mqx/source/io/serial;../../../../mqx/source/io/spi;../../../../mqx/source/io/tchres;../../../../mqx/source/io/tfs;../../../../mqx/source/io/timer;../../../../mqx/source/io/usb;../../../../mqx/source/io/usb_dcd;../../../../mqx/source/io/usb_dcd/polled;../../../../mqx/source/io/usb_dcd/int;../../../../mqx/source/psp/cortex_m/compiler/rv_uv4;../../../../mqx/source/psp/cortex_m/cpu;../../../../mqx/source/psp/cortex_m;../../../../config/twrk60f120m;../../../../config/common;../../../../mqx/source/include;../../../../mqx/source/tad</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <VariousControls>
+              <MiscControls>--cpreproc_opts '-D_DEBUG=1' --cpreproc 
+</MiscControls>
+              <Define/>
+              <Undefine/>
+              <IncludePath>../../../../mqx/source/io/debug;../../../../mqx/source/psp/cortex_m/compiler/rv_uv4;../../../../mqx/source/psp/cortex_m;../../../../mqx/source/psp/cortex_m/core/M4;../../../../config/twrk60f120m;../../../../mqx/source/include;../../../../config/common</IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>0</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>1</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x1FFF0000</DataAddressRange>
+            <ScatterFile>..\..\..\lib\twrk60f120m.uv4\mqx\intflash.scf</ScatterFile>
+            <IncludeLibs/>
+            <IncludeLibsPath/>
+            <Misc/>
+            <LinkerInputFile/>
+            <DisabledWarnings/>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+    <Groups><Group><GroupName>MFS Include</GroupName><Files><File><FileName>mfs_cnfg.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs_cnfg.h</FilePath></File><File><FileName>mfs_prv.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs_prv.h</FilePath></File><File><FileName>mfs_rev.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs_rev.h</FilePath></File><File><FileName>mfs.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs.h</FilePath></File><File><FileName>part_mgr.h</FileName><FileType>5</FileType><FilePath>../../../source/include/part_mgr.h</FilePath></File></Files></Group><Group><GroupName>MFS Source</GroupName><Files><File><FileName>dir_read.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/dir_read.c</FilePath></File><File><FileName>mfs_attribute.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_attribute.c</FilePath></File><File><FileName>mfs_cache.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_cache.c</FilePath></File><File><FileName>mfs_chain.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_chain.c</FilePath></File><File><FileName>mfs_cluster.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_cluster.c</FilePath></File><File><FileName>mfs_delete.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_delete.c</FilePath></File><File><FileName>mfs_dir_chain.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_dir_chain.c</FilePath></File><File><FileName>mfs_dir_entry.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_dir_entry.c</FilePath></File><File><FileName>mfs_directory.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_directory.c</FilePath></File><File><FileName>mfs_fat.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_fat.c</FilePath></File><File><FileName>mfs_find.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_find.c</FilePath></File><File><FileName>mfs_fio.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_fio.c</FilePath></File><File><FileName>mfs_flush.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_flush.c</FilePath></File><File><FileName>mfs_format.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_format.c</FilePath></File><File><FileName>mfs_globals.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_globals.c</FilePath></File><File><FileName>mfs_handle.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_handle.c</FilePath></File><File><FileName>mfs_ioctl.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_ioctl.c</FilePath></File><File><FileName>mfs_lfn.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_lfn.c</FilePath></File><File><FileName>mfs_misc.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_misc.c</FilePath></File><File><FileName>mfs_mount.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_mount.c</FilePath></File><File><FileName>mfs_open.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_open.c</FilePath></File><File><FileName>mfs_parse.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_parse.c</FilePath></File><File><FileName>mfs_read.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_read.c</FilePath></File><File><FileName>mfs_rename.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_rename.c</FilePath></File><File><FileName>mfs_rw.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_rw.c</FilePath></File><File><FileName>mfs_search.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_search.c</FilePath></File><File><FileName>mfs_time.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_time.c</FilePath></File><File><FileName>mfs_unicode.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_unicode.c</FilePath></File><File><FileName>mfs_valdev.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_valdev.c</FilePath></File><File><FileName>mfs_write.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_write.c</FilePath></File><File><FileName>part_mgr.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/part_mgr.c</FilePath></File></Files></Group></Groups></Target>
+    <Target>
+      <TargetName>release</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>MK60FN1M0xxx12</Device>
+          <Vendor>Freescale Semiconductor</Vendor>
+          <Cpu>CPUTYPE("Cortex-M4.fp")</Cpu>
+          <FlashUtilSpec/>
+          <StartupFile>"STARTUP\Freescale\Kinetis\startup_MK60F15.s" ("Freescale MK60FN1M0xxx12 Startup Code")</StartupFile>
+          <FlashDriverDll>ULP2CM3(-O2510 -S0 -C0 -FO15 -FD20000000 -FC4000 -FN1 -FF0MK_P512 -FS00 -FL080000)</FlashDriverDll>
+          <DeviceId>5361</DeviceId>
+          <RegisterFile>MK60F12.H</RegisterFile>
+          <MemoryEnv/>
+          <Cmp/>
+          <Asm/>
+          <Linker/>
+          <OHString/>
+          <InfinionOptionDll/>
+          <SLE66CMisc/>
+          <SLE66AMisc/>
+          <SLE66LinkerMisc/>
+          <SFDFile>SFD\Freescale\Kinetis\MK60F15.sfr</SFDFile>
+          <UseEnv>0</UseEnv>
+          <BinPath/>
+          <IncludePath/>
+          <LibPath/>
+          <RegisterFilePath>Freescale\Kinetis\</RegisterFilePath>
+          <DBRegisterFilePath>Freescale\Kinetis\</DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>..\..\..\..\lib\twrk60f120m.uv4\release\mfs\</OutputDirectory>
+          <OutputName>mfs.lib</OutputName>
+          <CreateExecutable>0</CreateExecutable>
+          <CreateLib>1</CreateLib>
+          <CreateHexFile>0</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>0</BrowseInformation>
+          <ListingPath>lib\twrk60f120m.uv4\release\mfs\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name/>
+            <UserProg2Name/>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name/>
+            <UserProg2Name/>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name>../../bat/mfs_twrk60f120m.bat ../../../.. ../../../../lib/twrk60f120m.uv4/release/mfs uv4</UserProg1Name>
+            <UserProg2Name/>
+            <UserProg1Dos16Mode>1</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </AfterMake>
+          <SelectedForBatchBuild>1</SelectedForBatchBuild>
+          <SVCSIdString/>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument/>
+          <IncludeLibraryModules/>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName>SARMCM3.DLL</SimDllName>
+          <SimDllArguments>-MPU</SimDllArguments>
+          <SimDlgDll>DCM.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments>-MPU</TargetDllArguments>
+          <TargetDlgDll>TCM.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+          <Simulator>
+            <UseSimulator>1</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+          </Simulator>
+          <Target>
+            <UseTarget>0</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>0</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>7</TargetSelection>
+          <SimDlls>
+            <CpuDll/>
+            <CpuDllArguments/>
+            <PeripheralDll/>
+            <PeripheralDllArguments/>
+            <InitializationFile/>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll/>
+            <CpuDllArguments/>
+            <PeripheralDll/>
+            <PeripheralDllArguments/>
+            <InitializationFile/>
+            <Driver>BIN\ULP2CM3.DLL</Driver>
+          </TargetDlls>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4100</DriverSelection>
+          </Flash1>
+          <Flash2>BIN\ULP2CM3.DLL</Flash2>
+          <Flash3>"" ()</Flash3>
+          <Flash4/>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <RvctDeviceName/>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>0</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>0</useUlib>
+            <EndSel>1</EndSel>
+            <uLtcg>0</uLtcg>
+            <RoSelD>3</RoSelD>
+            <RwSelD>3</RwSelD>
+            <CodeSel>0</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>0</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x1fff0000</StartAddress>
+                <Size>0x10000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x80000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x80000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x1fff0000</StartAddress>
+                <Size>0x10000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x10000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector/>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>4</Optim>
+            <oTime>0</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>1</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <VariousControls>
+              <MiscControls>-J../../../source/include 
+-J../../../../mqx/source/io/adc/kadc 
+-J../../../../mqx/source/io/adc 
+-J../../../../mqx/source/io/cm 
+-J../../../../config/twrk60f120m 
+-J../../../../mqx/source/io/dma 
+-J../../../../mqx/source/io/enet/macnet 
+-J../../../../mqx/source/io/enet/phy 
+-J../../../../mqx/source/io/enet 
+-J../../../../mqx/source/io/esdhc 
+-J../../../../mqx/source/io/flashx/freescale 
+-J../../../../mqx/source/io/flashx 
+-J../../../../mqx/source/io/flashx/amd 
+-J../../../../mqx/source/io/flashx/fujitsu 
+-J../../../../mqx/source/io/flashx/spansion 
+-J../../../../mqx/source/io/flashx/atmel 
+-J../../../../mqx/source/io/flashx/istrata 
+-J../../../../mqx/source/io/flashx/sharp 
+-J../../../../mqx/source/io/can/flexcan 
+-J../../../../mqx/source/io/gpio/kgpio 
+-J../../../../mqx/source/io/gpio 
+-J../../../../mqx/source/io/hwtimer 
+-J../../../../mqx/source/io/i2c 
+-J../../../../mqx/source/io/i2c/polled 
+-J../../../../mqx/source/io/i2c/int 
+-J../../../../mqx/source/bsp/twrk60f120m 
+-J../../../../config/common 
+-J../../../../mqx/source/include 
+-J../../../../mqx/source/bsp/twrk60f120m 
+-J../../../../mqx/source/io/enet 
+-J../../../../mqx/source/io/debug 
+-J../../../../mqx/source/io/io_mem 
+-J../../../../mqx/source/io/io_null 
+-J../../../../mqx/source/io/pipe 
+-J../../../../mqx/source/io/lpm 
+-J../../../../mqx/source/io/lwadc 
+-J../../../../mqx/source/io/lwgpio 
+-J../../../../mqx/source/io/nandflash/nfc 
+-J../../../../mqx/source/io/nandflash 
+-J../../../../mqx/source/io/pcb 
+-J../../../../mqx/source/io/pcb/mqxa 
+-J../../../../mqx/source/io/pccard 
+-J../../../../mqx/source/io/pcflash 
+-J../../../../mqx/source/io/rtc 
+-J../../../../mqx/source/io/sai 
+-J../../../../mqx/source/io/sai/dma 
+-J../../../../mqx/source/io/sdcard/sdcard_esdhc 
+-J../../../../mqx/source/io/sdcard/sdcard_spi 
+-J../../../../mqx/source/io/sdcard 
+-J../../../../mqx/source/io/serial 
+-J../../../../mqx/source/io/spi 
+-J../../../../mqx/source/io/tchres 
+-J../../../../mqx/source/io/tfs 
+-J../../../../mqx/source/io/timer 
+-J../../../../mqx/source/io/usb 
+-J../../../../mqx/source/io/usb_dcd 
+-J../../../../mqx/source/io/usb_dcd/polled 
+-J../../../../mqx/source/io/usb_dcd/int 
+-J../../../../mqx/source/psp/cortex_m/compiler/rv_uv4 
+-J../../../../mqx/source/psp/cortex_m/cpu 
+-J../../../../mqx/source/psp/cortex_m 
+-J../../../../config/twrk60f120m 
+-J../../../../config/common 
+-J../../../../mqx/source/include 
+-J../../../../mqx/source/tad 
+-J#J 
+--library_interface=none 
+--library_type=standardlib 
+--c99 
+--diag_suppress=1296,186 
+</MiscControls>
+              <Define>NDEBUG=1</Define>
+              <Undefine/>
+              <IncludePath>../../../source/include;../../../../mqx/source/io/adc/kadc;../../../../mqx/source/io/adc;../../../../mqx/source/io/cm;../../../../config/twrk60f120m;../../../../mqx/source/io/dma;../../../../mqx/source/io/enet/macnet;../../../../mqx/source/io/enet/phy;../../../../mqx/source/io/enet;../../../../mqx/source/io/esdhc;../../../../mqx/source/io/flashx/freescale;../../../../mqx/source/io/flashx;../../../../mqx/source/io/flashx/amd;../../../../mqx/source/io/flashx/fujitsu;../../../../mqx/source/io/flashx/spansion;../../../../mqx/source/io/flashx/atmel;../../../../mqx/source/io/flashx/istrata;../../../../mqx/source/io/flashx/sharp;../../../../mqx/source/io/can/flexcan;../../../../mqx/source/io/gpio/kgpio;../../../../mqx/source/io/gpio;../../../../mqx/source/io/hwtimer;../../../../mqx/source/io/i2c;../../../../mqx/source/io/i2c/polled;../../../../mqx/source/io/i2c/int;../../../../mqx/source/bsp/twrk60f120m;../../../../config/common;../../../../mqx/source/include;../../../../mqx/source/bsp/twrk60f120m;../../../../mqx/source/io/enet;../../../../mqx/source/io/debug;../../../../mqx/source/io/io_mem;../../../../mqx/source/io/io_null;../../../../mqx/source/io/pipe;../../../../mqx/source/io/lpm;../../../../mqx/source/io/lwadc;../../../../mqx/source/io/lwgpio;../../../../mqx/source/io/nandflash/nfc;../../../../mqx/source/io/nandflash;../../../../mqx/source/io/pcb;../../../../mqx/source/io/pcb/mqxa;../../../../mqx/source/io/pccard;../../../../mqx/source/io/pcflash;../../../../mqx/source/io/rtc;../../../../mqx/source/io/sai;../../../../mqx/source/io/sai/dma;../../../../mqx/source/io/sdcard/sdcard_esdhc;../../../../mqx/source/io/sdcard/sdcard_spi;../../../../mqx/source/io/sdcard;../../../../mqx/source/io/serial;../../../../mqx/source/io/spi;../../../../mqx/source/io/tchres;../../../../mqx/source/io/tfs;../../../../mqx/source/io/timer;../../../../mqx/source/io/usb;../../../../mqx/source/io/usb_dcd;../../../../mqx/source/io/usb_dcd/polled;../../../../mqx/source/io/usb_dcd/int;../../../../mqx/source/psp/cortex_m/compiler/rv_uv4;../../../../mqx/source/psp/cortex_m/cpu;../../../../mqx/source/psp/cortex_m;../../../../config/twrk60f120m;../../../../config/common;../../../../mqx/source/include;../../../../mqx/source/tad</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <VariousControls>
+              <MiscControls>--cpreproc_opts '-DNDEBUG=1' --cpreproc 
+</MiscControls>
+              <Define/>
+              <Undefine/>
+              <IncludePath>../../../../mqx/source/io/debug;../../../../mqx/source/psp/cortex_m/compiler/rv_uv4;../../../../mqx/source/psp/cortex_m;../../../../mqx/source/psp/cortex_m/core/M4;../../../../config/twrk60f120m;../../../../mqx/source/include;../../../../config/common</IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>0</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>1</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x1FFF0000</DataAddressRange>
+            <ScatterFile>..\..\..\lib\twrk60f120m.uv4\mqx\intflash.scf</ScatterFile>
+            <IncludeLibs/>
+            <IncludeLibsPath/>
+            <Misc/>
+            <LinkerInputFile/>
+            <DisabledWarnings/>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+    <Groups><Group><GroupName>MFS Include</GroupName><Files><File><FileName>mfs_cnfg.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs_cnfg.h</FilePath></File><File><FileName>mfs_prv.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs_prv.h</FilePath></File><File><FileName>mfs_rev.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs_rev.h</FilePath></File><File><FileName>mfs.h</FileName><FileType>5</FileType><FilePath>../../../source/include/mfs.h</FilePath></File><File><FileName>part_mgr.h</FileName><FileType>5</FileType><FilePath>../../../source/include/part_mgr.h</FilePath></File></Files></Group><Group><GroupName>MFS Source</GroupName><Files><File><FileName>dir_read.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/dir_read.c</FilePath></File><File><FileName>mfs_attribute.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_attribute.c</FilePath></File><File><FileName>mfs_cache.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_cache.c</FilePath></File><File><FileName>mfs_chain.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_chain.c</FilePath></File><File><FileName>mfs_cluster.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_cluster.c</FilePath></File><File><FileName>mfs_delete.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_delete.c</FilePath></File><File><FileName>mfs_dir_chain.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_dir_chain.c</FilePath></File><File><FileName>mfs_dir_entry.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_dir_entry.c</FilePath></File><File><FileName>mfs_directory.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_directory.c</FilePath></File><File><FileName>mfs_fat.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_fat.c</FilePath></File><File><FileName>mfs_find.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_find.c</FilePath></File><File><FileName>mfs_fio.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_fio.c</FilePath></File><File><FileName>mfs_flush.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_flush.c</FilePath></File><File><FileName>mfs_format.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_format.c</FilePath></File><File><FileName>mfs_globals.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_globals.c</FilePath></File><File><FileName>mfs_handle.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_handle.c</FilePath></File><File><FileName>mfs_ioctl.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_ioctl.c</FilePath></File><File><FileName>mfs_lfn.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_lfn.c</FilePath></File><File><FileName>mfs_misc.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_misc.c</FilePath></File><File><FileName>mfs_mount.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_mount.c</FilePath></File><File><FileName>mfs_open.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_open.c</FilePath></File><File><FileName>mfs_parse.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_parse.c</FilePath></File><File><FileName>mfs_read.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_read.c</FilePath></File><File><FileName>mfs_rename.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_rename.c</FilePath></File><File><FileName>mfs_rw.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_rw.c</FilePath></File><File><FileName>mfs_search.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_search.c</FilePath></File><File><FileName>mfs_time.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_time.c</FilePath></File><File><FileName>mfs_unicode.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_unicode.c</FilePath></File><File><FileName>mfs_valdev.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_valdev.c</FilePath></File><File><FileName>mfs_write.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/mfs_write.c</FilePath></File><File><FileName>part_mgr.c</FileName><FileType>1</FileType><FilePath>../../../source/generic/part_mgr.c</FilePath></File></Files></Group></Groups></Target>
+  </Targets>
+
+</Project>

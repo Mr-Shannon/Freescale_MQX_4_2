@@ -1,0 +1,11 @@
+@echo OFF
+set NOPAUSE=%1
+<?rb for command in @commands ?>
+#{command}
+if errorlevel 1 (
+set NOPAUSE=0
+pause
+)
+<?rb end ?>
+
+if not "%1" == "nopause" (pause)

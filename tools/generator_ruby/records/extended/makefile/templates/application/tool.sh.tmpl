@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+<?rb for command in @commands ?>
+<?rb    if command['cwd'] ?>
+(cd #{command['cwd']} #{command['exec']})
+<?rb    else ?>
+#{command['exec']}
+<?rb    end ?>
+if [ "$?" != "0" ] && [ "<?rb _buf += "${1}" ?>" != "nopause" ]; then
+read -p "Press any key to continue... " -n1 -s
+fi
+<?rb end ?>
+
+if  [ "<?rb _buf += "${1}" ?>" != "nopause" ]; then
+read -p "Press any key to continue... " -n1 -s
+fi
+

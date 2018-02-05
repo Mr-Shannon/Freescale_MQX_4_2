@@ -1,0 +1,107 @@
+#----------------------------------------------------------
+# setup variables
+#----------------------------------------------------------
+MQX_ROOTDIR             = $(abspath ../../../..)
+TYPE                    = library
+NAME                    = mfs
+BOARD                   = twrmcf54418
+LIBRARY_ROOTDIR         = $(MQX_ROOTDIR)/lib/$(BOARD).$(TOOL)
+LIBRARY_DIR             = $(LIBRARY_ROOTDIR)/$(CONFIG)/mfs
+LIBRARY_FILE            = $(LIBRARY_DIR)/mfs.$(LIBRARY_EXT)
+POSTBUILD_CMD           = $(if $(findstring $(HOSTENV),WINDOWS),$(MQX_ROOTDIR)/mfs/build/bat/mfs_twrmcf54418.bat $(MQX_ROOTDIR) $(LIBRARY_DIR) $(TOOL),$(MQX_ROOTDIR)/mfs/build/bat/mfs_twrmcf54418.sh $(MQX_ROOTDIR) $(LIBRARY_DIR) $(TOOL))
+
+
+#-----------------------------------------------------------
+# load tool settings
+#-----------------------------------------------------------
+-include tools/$(TOOL).mak
+
+
+#-----------------------------------------------------------
+# search paths
+#-----------------------------------------------------------
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/psp/coldfire
+INCLUDE += $(MQX_ROOTDIR)/config/twrmcf54418
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/include
+INCLUDE += $(MQX_ROOTDIR)/config/common
+INCLUDE += $(TOOLCHAIN_ROOTDIR)/MCU/ColdFire_Support/ewl/EWL_C/include
+INCLUDE += $(MQX_ROOTDIR)/mfs/source/include
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/adc/mcf544xx
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/adc
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/enet/macnet
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/enet/phy
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/enet
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/esdhc
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/can/flexcan
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/gpio/mcf5441
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/gpio
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/i2c
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/i2c/polled
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/i2c/int
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/i2s
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/i2s/int
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/bsp/twrmcf54418
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/int_ctrl
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/io_mem
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/io_null
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/pipe
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/lwgpio
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/nandflash/nfc
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/nandflash
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/pcb
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/pcb/mqxa
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/pccard
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/pcflash
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/rtc
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/sdcard/sdcard_spi
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/sdcard/sdcard_esdhc
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/sdcard
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/serial
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/spi
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/tfs
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/timer
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/io/usb
+INCLUDE += $(MQX_ROOTDIR)/mqx/source/tad
+
+
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/dir_read.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_attribute.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_cache.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_chain.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_cluster.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_delete.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_dir_chain.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_dir_entry.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_directory.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_fat.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_find.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_fio.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_flush.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_format.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_globals.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_handle.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_ioctl.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_lfn.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_misc.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_mount.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_open.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_parse.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_read.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_rename.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_rw.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_search.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_time.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_unicode.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_valdev.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/mfs_write.c
+SOURCES += $(MQX_ROOTDIR)/mfs/source/generic/part_mgr.c
+
+
+#----------------------------------------------------------
+# load global settings
+#----------------------------------------------------------
+include $(MQX_ROOTDIR)/build/common/make/global.mak
+-include $(MQX_ROOTDIR)/build/$(BOARD)/make/tools/$(TOOL).mak
+include $(MQX_ROOTDIR)/build/common/make/verify.mak
+include $(MQX_ROOTDIR)/build/common/make/lib-process.mak
+

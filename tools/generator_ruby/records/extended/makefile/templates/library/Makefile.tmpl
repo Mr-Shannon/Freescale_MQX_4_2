@@ -1,0 +1,42 @@
+#----------------------------------------------------------
+# setup variables
+#----------------------------------------------------------
+MQX_ROOTDIR             = $(abspath #{ @mqxrootdir })
+TYPE                    = library
+NAME                    = #{ @name }
+BOARD                   = #{ @board }
+LIBRARY_ROOTDIR         = #{ @library_rootdir }
+LIBRARY_DIR             = #{ @library_dir }
+LIBRARY_FILE            = #{ @library_file }
+POSTBUILD_CMD           = $(if $(findstring $(HOSTENV),WINDOWS),#{ @postbuild_cmd_bat },#{ @postbuild_cmd_sh })
+
+
+#-----------------------------------------------------------
+# load tool settings
+#-----------------------------------------------------------
+-include tools/$(TOOL).mak
+
+
+<?rb if @include && !@include.empty? ?>
+#-----------------------------------------------------------
+# search paths
+#-----------------------------------------------------------
+<?rb    for inc in @include ?>
+INCLUDE += #{ inc }
+<?rb    end ?>
+<?rb end ?>
+
+
+<?rb for source in @sources ?>
+SOURCES += #{ source }
+<?rb end ?>
+
+
+#----------------------------------------------------------
+# load global settings
+#----------------------------------------------------------
+include $(MQX_ROOTDIR)/build/common/make/global.mak
+-include $(MQX_ROOTDIR)/build/$(BOARD)/make/tools/$(TOOL).mak
+include $(MQX_ROOTDIR)/build/common/make/verify.mak
+include $(MQX_ROOTDIR)/build/common/make/lib-process.mak
+

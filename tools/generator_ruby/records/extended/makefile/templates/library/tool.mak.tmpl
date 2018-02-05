@@ -1,0 +1,68 @@
+<?rb if @include and not @include.empty? ?>
+#-----------------------------------------------------------
+# search paths
+#-----------------------------------------------------------
+<?rb    for config_key, config_data in @include ?>
+ifeq ($(CONFIG),#{config_data[ 'name' ]})
+<?rb        for include in config_data[ 'include' ] ?>
+INCLUDE += #{include}
+<?rb        end ?>
+endif
+<?rb    end ?>
+<?rb end ?>
+
+
+<?rb if @sources and not @sources.empty? ?>
+#-----------------------------------------------------------
+# search paths
+#-----------------------------------------------------------
+<?rb    for source in @sources ?>
+SOURCES += #{source}
+<?rb    end ?>
+<?rb end ?>
+
+
+<?rb if @flags and not @flags.empty? ?>
+<?rb    for config_key, config_data in @flags ?>
+<?rb        
+            if (
+                (config_data[ 'as-flags' ] and not config_data[ 'as-flags' ].empty?) or
+                (config_data[ 'cc-flags' ] and not config_data[ 'cc-flags' ].empty?) or
+                (config_data[ 'cx-flags' ] and not config_data[ 'cx-flags' ].empty?) or
+                (config_data[ 'ar-flags' ] and not config_data[ 'ar-flags' ].empty?) or
+                (config_data[ 'as-define' ] and not config_data[ 'as-define' ].empty?) or
+                (config_data[ 'cc-define' ] and not config_data[ 'cc-define' ].empty?) or
+                (config_data[ 'cx-define' ] and not config_data[ 'cx-define' ].empty?)
+            )
+?>
+#-----------------------------------------------------------
+# '#{ config_data[ 'name' ] }' configuration settings
+#-----------------------------------------------------------
+ifeq ($(CONFIG),#{ config_data[ 'name' ] })
+<?rb            if config_data[ 'as-flags' ] and not config_data[ 'as-flags' ].empty? ?>
+AS_FLAGS += <?rb for flag in config_data[ 'as-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config_data[ 'cc-flags' ] and not config_data[ 'cc-flags' ].empty? ?>
+CC_FLAGS += <?rb for flag in config_data[ 'cc-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config_data[ 'cx-flags' ] and not config_data[ 'cx-flags' ].empty? ?>
+CX_FLAGS += <?rb for flag in config_data[ 'cx-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config_data[ 'ar-flags' ] and not config_data[ 'ar-flags' ].empty? ?>
+AR_FLAGS += <?rb for flag in config_data[ 'ar-flags' ] ?>#{flag} <?rb end ?>
+<?rb            end ?>
+<?rb            if config_data[ 'as-define' ] and not config_data[ 'as-define' ].empty? ?>
+AS_DEFINE += <?rb for define in config_data[ 'as-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+<?rb            if config_data[ 'cc-define' ] and not config_data[ 'cc-define' ].empty? ?>
+CC_DEFINE += <?rb for define in config_data[ 'cc-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+<?rb            if config_data[ 'cx-define' ] and not config_data[ 'cx-define' ].empty? ?>
+CX_DEFINE += <?rb for define in config_data[ 'cx-define' ] ?>#{define} <?rb end ?>
+<?rb            end ?>
+endif
+<?rb        end ?>
+<?rb    end ?>
+<?rb end ?>
+
+

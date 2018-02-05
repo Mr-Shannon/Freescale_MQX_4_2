@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# expect forward slash paths
+ROOTDIR="<?rb   _buf += '${1}' ?>"
+OUTPUTDIR="<?rb _buf += '${2}' ?>"
+TOOL="<?rb      _buf += '${3}' ?>"
+
+<?rb    for tool_key in @tools_data.keys ?>
+if [ "<?rb      _buf += '${TOOL}' ?>" = "#{tool_key}" ]; then
+<?rb        directories = @tools_data[ tool_key ][ 'directories' ] ?>
+mkdir -p "<?rb _buf += '${OUTPUTDIR}' ?>"
+<?rb        for directory in directories ?>
+mkdir -p "<?rb _buf += '${OUTPUTDIR}/' ?>#{directory}"
+<?rb        end ?>
+<?rb        files = @tools_data[ tool_key ][ 'files' ] ?>
+<?rb        for file in files ?>
+cp -f "<?rb _buf += '${ROOTDIR}/' ?>#{file[ 'source' ]}" "<?rb _buf += '${OUTPUTDIR}/' ?>#{file[ 'target' ]}"
+<?rb        end ?>
+:
+fi
+
+
+<?rb    end ?>
+
+

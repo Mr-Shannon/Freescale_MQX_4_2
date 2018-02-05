@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>speaker_host_twrk60f120m</name>
+	<comment/>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+<linkedResources><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/audio_speaker.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/audio_speaker.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/audio_speaker.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/audio_speaker.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sh_audio.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sh_audio.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sh_audio.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sh_audio.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sd_card.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sd_card.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sd_card.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sd_card.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/hidkeyboard.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/hidkeyboard.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/hidkeyboard.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/hidkeyboard.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/usb_classes.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_classes.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/usb_classes.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/usb_classes.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/wav.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/wav.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/wav.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/wav.h</locationURI></link></linkedResources></projectDescription>

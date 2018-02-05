@@ -1,0 +1,15 @@
+@echo OFF
+set NOPAUSE=%1
+<?rb for command in @commands ?>
+<?rb    if command['cwd'] ?>
+SET CWD=%CD%
+cd #{command['cwd']}
+<?rb    end ?>
+#{command['exec']}
+if errorlevel 1 if NOT "%NOPAUSE%" == "nopause" (pause)
+<?rb    if command['cwd'] ?>
+cd %CWD%
+<?rb    end ?>
+<?rb end ?>
+
+if not "%NOPAUSE%" == "nopause" (pause)

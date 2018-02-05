@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>lwdemo_frdmk64f</name>
+	<comment/>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+<linkedResources><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/ttl.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/ttl.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sender.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sender.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/responde.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/responde.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/lwsemb.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/lwsemb.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/lwsema.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/lwsema.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/lweventb.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/lweventb.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/lweventa.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/lweventa.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/lwdemo.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/lwdemo.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/lwdemo.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/lwdemo.c</locationURI></link></linkedResources></projectDescription>

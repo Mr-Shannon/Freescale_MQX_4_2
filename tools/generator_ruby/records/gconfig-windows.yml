@@ -1,0 +1,122 @@
+#relative path to "/tools/generator_ruby/records"
+
+common:
+    platforms: platforms.yml
+    enable_cache: false
+    loglevel: 1
+    searchpaths:
+      - '.'
+    current_pkg: default_pkg
+    packages:
+        default_pkg:
+            makefile_gen:
+                windows:        { 'all': false }
+                nodebug:        { 'targets': true }
+                make:           { 'all': false }
+            project_gen:
+                windows:        { 'all': false }
+                nodebug:        { 'targets': true }
+                project:        { 'all': false }
+            postbuild_gen:
+                windows:        { 'all': false }
+                nodebug:        { 'targets': true }
+                batch:          { 'all': false }
+        install_mqx_pkg:
+            makefile_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false}
+                nodebug:        { 'targets': true }
+                ipv6:           { 'sources': true }
+                make:           { 'all': false }
+                ipv6_eval:      { 'sources': true }
+            project_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false}
+                nodebug:        { 'targets': true }
+                ipv6:           { 'sources': true }
+                project:        { 'all': false }
+                ipv6_eval:      { 'sources': true }
+            postbuild_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false}
+                nodebug:        { 'targets': true }
+                ipv6:           { 'sources': true }
+                batch:          { 'all': false }
+                ipv6_eval:      { 'sources': true }
+            ufiles_gen:
+                windows:        { 'all': false }
+                nodebug:        { 'targets': true }
+                ipv6:           { 'sources': true }
+                installer:      { 'all': false }
+                ipv6_eval:      { 'sources': true }
+        install_ipv6_pkg:
+            makefile_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                make:           { 'all': false }
+            project_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                project:        { 'all': false }
+            postbuild_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                batch:          { 'all': false }
+            ufiles_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                ipv6:           { 'sources': false }
+        install_ssl_pkg:
+            makefile_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                make:           { 'all': false }
+            project_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                project:        { 'all': false }
+            postbuild_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                batch:          { 'all': false }
+            ufiles_gen:
+                windows:        { 'all': false }
+                installer:      { 'all': false }
+                nodebug:        { 'targets': true }
+                ssl:            { 'sources': false }
+    defaultmode:
+      batch: 0
+      beart: 1
+      buildtests: 1
+      installer: 1
+      make: 1
+      project: 1
+      unix: 1
+      windows: 1
+      ipv6: 0
+      ipv6_eval: 0
+      ssl: 0
+      nodebug: 0
+    system: windows
+    buildtestlevel: all
+rootdirs:
+    # rootdir for script resources - related to 'extended' path
+    script_root: '.'
+    # roodir for generated projects
+    output_root: '../../..'
+    # rootdir to project templates
+    template_root: '../templates'
+    # mqx rootdir path - .yml related paths
+    mqx_sources: '../../..'
+    # installer rootdir
+    installer_root: '../../..'
+    # mqx rootdir path - .yml related paths
+    postbuild_root: '../../..'
+

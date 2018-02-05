@@ -1,0 +1,9 @@
+@echo OFF
+SET CWD=%CD%
+
+setlocal
+<?rb for command in @commands ?>
+#{command}
+<?rb end ?>
+
+if not "%1" == "nopause" (pause)

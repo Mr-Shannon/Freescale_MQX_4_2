@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>sai_duplex_demo_twrk64f120m</name>
+	<comment/>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+<linkedResources><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/main.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sgtl5000.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sgtl5000.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sgtl5000.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sgtl5000.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/log_messages.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/log_messages.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/log_messages.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/log_messages.c</locationURI></link></linkedResources></projectDescription>

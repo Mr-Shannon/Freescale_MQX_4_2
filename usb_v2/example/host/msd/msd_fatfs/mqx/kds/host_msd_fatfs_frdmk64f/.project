@@ -1,0 +1,25 @@
+<?xml version="1.0"?><projectDescription>
+	<name>host_msd_fatfs_frdmk64f</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+<linkedResources><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.c</locationURI></link><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/command_lists.c</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/command_lists.c</locationURI></link><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/mfs_usb.h</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/mfs_usb.h</locationURI></link><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/msd_mfs_demo.c</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/msd_mfs_demo.c</locationURI></link><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/shell_task.c</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/shell_task.c</locationURI></link><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/usb_file.c</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/usb_file.c</locationURI></link><link><name>Sources/app</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/usb_file.h</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/usb_file.h</locationURI></link><link><name>Sources/app/mfs</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/mfs/usbmfs.c</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/mfs/usbmfs.c</locationURI></link><link><name>Sources/app/mfs</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/mfs/usbmfs.h</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/mfs/usbmfs.h</locationURI></link><link><name>Sources/app/mfs</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/app/mfs/usbmfspr.h</name><type>1</type><locationURI>PARENT-2-PROJECT_LOC/mfs/usbmfspr.h</locationURI></link></linkedResources><variableList><variable><name>MQX_ROOT_DIR</name><value>${PROJECT_LOC}/../../../../../../..</value></variable></variableList></projectDescription>

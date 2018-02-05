@@ -1,0 +1,18 @@
+"BSP Cloning Wizard for the MQX RTOS" (c) Freescale 2015
+---------------------------------------------------------
+
+
+----------------------------
+ 05/04/2015 - version 1.6.0 
+----------------------------
+
+- added support for MQX generators written in Ruby
+
+----------------------------
+ 10/16/2014 - version 1.5.0 
+----------------------------
+
+- runs on Eclipse 4.4
+- added "Kinetis Design Studio" support for generating projects (libraries, examples) and .wsd files (Project of Projects)
+- loads opened boards from previous application run
+- saves selected IDEs, Libraries and Examples for all opened boards

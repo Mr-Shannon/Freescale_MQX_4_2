@@ -1,0 +1,194 @@
+Release Name: MQX RTOS    
+Version: 4.2.0-ga (incl. IPv6)
+
+List of components:
+Ajax                      
+                          Description: Ajax implementation for webserver demo
+                          Version: NA
+                          Author:  Mozilla Foundation
+                          License: Open Source: Creative Commons Attribution 2.5
+                          Format: source code
+                          URL: https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
+                          Location: 
+                          rtcs/examples/httpsrv/web_pages/request.js
+
+AT&T getopt(3) implementation            
+                          Description: Shell get option code
+                          Version: NA
+                          Author:  AT&T
+                          License: Open Source: Public domain
+                          Format: source code
+                          URL: NA
+                          Location: 
+                          shell/source/shell/sh_util.c
+
+Eclipse Platform            
+                          Description: Eclipse Platform for BSP clonning wizard
+                          Version: 3.7.0
+                          Author:  Eclipse Foundation
+                          License: Open Source: Eclipse Public Licence 1.0 
+                          Format: jar
+                          URL: http://www.eclipse.org/eclipse/
+                          Location: 
+                          tools/BSPCloningWizard/
+                          
+HTTP Request Implementation
+                          Description: Mozilla Ajax http request implementation 
+                          Version: NA
+                          Author:  Mozilla Foundation
+                          License: Open Source: Creative Commons Attribution-ShareAlike license
+                          Format: source code
+                          URL: https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started 
+                          Location:                           
+                          demo/web_hvac_v2/web_pages/request.js
+                          rtcs/examples/httpsrv/filesystem/web/request.js
+
+Perl libraries            
+                          Description: Various Perl libraries
+                          License: Open Source: Artistic License 1.0, Artistic License 2.0 
+                          Format: tar.gz
+                          URL: http://www.cpan.org
+                          Location: 
+                          tools/generator/modules/
+
+DOM4J            
+                          Description: XML parser for CW extension
+                          Version: 1.6.1
+                          Author:  MetaStuff
+                          License: Open Source: Proprietary (BSD 2.0+ like) 
+                          Format: jar
+                          URL: http://dom4j.sourceforge.net
+                          Location:   
+                          tools/codewarrior_extensions/CW MCU v10.2/mqx_p2_repository/plugins/com.freescale.dom4j
+                          tools/ds5/ds5_update_site.zip/plugins/com.freescale.dom4j
+
+IPv4 & IPv6            
+                          Description: IP code based on FreeBSD code
+                          Version: NA
+                          Author:  Internet Systems Consortium, Inc. ("ISC")
+                          License: Open Source: BSD-2-Clause, BSD simple
+                          Format: source code
+                          URL: svn.freebsd.org   
+                          Location: 
+                          rtcs/source/if/getaddrinfo.c
+                          rtcs/source/if/getnameinfo.c
+                          rtcs/source/if/inet_ntop.c
+                          rtcs/source/if/inet_pton.c
+                          rtcs/source/include/addrinfo.h
+                          rtcs/source/include/rtcs_sock.h (BSD simple)
+
+Iperf            
+                          Description: Iperf - The TCP/UDP Bandwidth Measurement Tool
+                          Version: 3.0-BETA4
+                          Authors:  
+                          - The Board of Trustees of the University of Illinois
+                          - The Regents of the University of California
+                          License: Open Source: Iperf license (BSD like)
+                          Format: source code
+                          URL: iperf.fr
+                          Location: 
+                          rtcs/examples/iperf/
+                          
+JFreeChart            
+                          Description: XML parser for CW extension
+                          Version: 1.0.13
+                          Author:  Community
+                          License: Open Source: LGPLv2.1
+                          Format: lib
+                          URL: http://www.jfree.org/jfreechart/
+                          Location:   
+                          tools/codewarrior_extensions/CW MCU v10.2/mqx_p2_repository/plugins/com.freescale.mqx.jfreechart.libs
+                          
+jQuery
+                          Description: JavaScript library
+                          Version: NA
+                          Author:  The jQuery Foundation
+                          License: Open Source: MIT
+                          Format: source code
+                          URL: https://jquery.org/
+                          Location:
+                          rtcs/examples/httpsrv/chat_client  
+                                                 
+MD5            
+                          Description: Implements the MD5 Algorithm as defined in RFC 1321
+                          Version: 1.6
+                          Author:  Community + Aladdin Enterprises
+                          License: Open Source: OSS VARIANT BSD 2-CLAUSE "SIMPLIFIED" MD5 CODE BASE
+                          Format: source code
+                          URL: NA
+                          Location:   
+                          mqx/examples/bootloader_vybrid/md5/
+                          mqx/examples/bootloader_vybrid_qspixip/md5/
+
+PPP            
+                          Description: PPP IP Control Protocol
+                          Version: NA
+                          Author:  Carnegie Mellon University
+                          License: Open Source: BSD-4-Clause
+                          Format: source code
+                          URL: http://svn.freebsd.org/base/release/3.0.0/usr.sbin/pppd/
+                          Location:   
+                          rtcs/source/media/ipcpfsm.c
+                          rtcs/source/ppp/lcp.c
+                          rtcs/source/ppp/pppfsm.c
+                          
+PrimeUI
+                          Description: Web UI components
+                          Version: NA
+                          Author:  PrimeTek
+                          License: Open Source: Apache-2.0
+                          Format: source code
+                          URL: http://www.primefaces.org/primeui/ 
+                          Location:
+                          rtcsexamples/httpsrv/chat_client  
+                                                                           
+SigmaTel NAND Driver
+                          Description: Public interfaces to the NAND driver
+                          Version: NA
+                          Author:  SigmaTel
+                          License: Proprietary, compliant with MQX license
+                          Format: source code
+                          URL: NA
+                          Location:   
+                          ffs/source/wearleveling/hal/ddi_nand.h
+                          
+SHA-1
+                          Description: SHA-1 implementation in C
+                          Version: NA
+                          Author:  Steve Reid <sreid@sea-to-sky.net>
+                          License: Open Source: Public Domain
+                          Format: source code
+                          URL: NA 
+                          Location: 
+                          rtcs/source/apps/rtcs_sha1.c
+                          rtcs/source/include/rtcs_sha1.h
+                          
+SWT
+                          Description: SWT: The Standard Widget Toolkit
+                          Version: NA
+                          Author:  The Eclipse Foundation
+                          License: Open Source: Public Domain
+                          Format: lib
+                          URL: https://www.eclipse.org/swt/
+                          Location:
+                          tools/codewarrior_extension/CW MCU v10.2/mqx_p2_repository/pluginds/com.freescale.mqx.runtimetad.com/org/eclipse/wb/swt
+
+MCC
+                          Description: Multicore communication library
+                          Version: NA
+                          Author:  Freescale
+                          License: Open Source: BSD-3-Clause
+                          Format: source code
+                          URL: NA 
+                          Location: 
+                          mcc/*
+                                                    
+TLSF - Two Level Segregated Fit
+                          Description: Two Level Segregated Fit
+                          Version: 3.0
+                          Author:  Matthew Conte
+                          License: Open Source: Public domain
+                          Format: source code
+                          URL: http://tlsf.baisoku.org/ 
+                          Location: 
+                          mqx/source/kernel/tlsf.c

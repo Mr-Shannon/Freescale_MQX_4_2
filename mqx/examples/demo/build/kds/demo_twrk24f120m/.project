@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>demo_twrk24f120m</name>
+	<comment/>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+<linkedResources><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/ttl.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/ttl.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sender.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sender.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/semb.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/semb.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/sema.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/sema.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/responde.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/responde.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/mutexb.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/mutexb.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/mutexa.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/mutexa.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/main.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/main.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/eventb.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/eventb.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/eventa.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/eventa.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/demo.h</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/demo.h</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/demo.dsn</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/demo.dsn</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/demo.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/demo.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/btimesli.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/btimesli.c</locationURI></link><link><name>Sources</name><type>2</type><locationURI>virtual:/virtual</locationURI></link><link><name>Sources/atimesli.c</name><type>1</type><locationURI>PARENT-3-PROJECT_LOC/atimesli.c</locationURI></link></linkedResources></projectDescription>
